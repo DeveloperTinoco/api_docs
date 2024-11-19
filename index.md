@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="styles.css">
 
-## Current available datasets
+## Available Datasets
 
 * IU
 * RU
