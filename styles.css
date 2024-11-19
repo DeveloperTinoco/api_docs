@@ -6,3 +6,8 @@ body {
 .highlighted-text { 
     color: #e30b5d; 
 }
+
+.language-python .k { color: #66d9ef; }  /* Keywords */
+.language-python .s { color: #e6db74; }  /* Strings */
+.language-python .c { color: #75715e; }  /* Comments */
+.language-python .n { color: #f8f8f2; }  /* Names (functions, variables) */
