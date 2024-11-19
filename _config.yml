@@ -1,2 +1,10 @@
-title: ""
+title: "FTR Intel - API Testing Documentation"
 description: ""
+
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+
+# Additional customization
+minima:
+  skin: dark
