@@ -5,6 +5,33 @@
     }
 }
 
+/* Target the outer div with class "language-python" */
+.language-python {
+    background-color: #1e1e1e; /* Dark background for Python code blocks */
+    color: #d4d4d4;            /* Light text color */
+    padding: 10px;             /* Padding around the block */
+    border-radius: 6px;        /* Rounded corners */
+    overflow: auto;            /* Enable scrolling for long lines */
+    font-family: "Courier New", Courier, monospace; /* Monospace font */
+}
+
+/* Target the <pre> element */
+.language-python .highlight pre {
+    background-color: transparent; /* Keep it consistent with outer div */
+    color: inherit;                /* Inherit color from parent */
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 14px;               /* Adjust text size if needed */
+}
+
+/* Target the <code> element */
+.language-python .highlight code {
+    background-color: transparent; /* Consistent with outer div */
+    color: inherit;                /* Inherit color from parent */
+    font-family: inherit;
+}
+
 .highlighted-text { 
     color: #e30b5d; 
 }
