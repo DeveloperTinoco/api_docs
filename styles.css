@@ -8,7 +8,7 @@
 /* Target the outer div with class "language-python" */
 .language-python {
     background-color: #1e1e1e; /* Dark background for Python code blocks */
-    color: #d4d4d4;            /* Light text color */
+    color: #1e1e1e;            /* Light text color */
     padding: 10px;             /* Padding around the block */
     border-radius: 6px;        /* Rounded corners */
     overflow: auto;            /* Enable scrolling for long lines */
