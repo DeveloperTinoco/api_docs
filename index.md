@@ -2,8 +2,6 @@
   .highlighted-text { color: #e30b5d; }
 </style>
 
-# FTR Intel - API Testing Documentation
-
 ## Current available datasets
 
 * IU
