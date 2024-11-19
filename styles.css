@@ -7,7 +7,7 @@ body {
     color: #e30b5d; 
 }
 
-.language-python .k { color: #66d9ef; }  /* Keywords */
-.language-python .s { color: #e6db74; }  /* Strings */
-.language-python .c { color: #75715e; }  /* Comments */
-.language-python .n { color: #f8f8f2; }  /* Names (functions, variables) */
+code, pre .k { color: #66d9ef; }  /* Keywords */
+code, pre .s { color: #e6db74; }  /* Strings */
+code, pre .c { color: #75715e; }  /* Comments */
+code, pre .n { color: #f8f8f2; }  /* Names (functions, variables) */
