@@ -24,9 +24,7 @@ There are currently 7 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/tables/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 
-##
-
-### /api/v1/token - __POST__
+## /api/v1/token - __POST__
 
 This <span class='highlighted-text'>__/token__</span> endpoint returns a JWT bearer token to the user that needs to be used in every request moving forward so that the user can remain authenticated for the given timeframe that we allocate to each token. After the given timeframe runs out (1 hour), the token expires and a new token has to be requested.
 
@@ -78,9 +76,7 @@ Once a user is properly authenticated and they receive a JWT bearer token, they 
 
 It is best practice to store the JWT token once you request it and implement logic to re-use that JWT token. Once the token expires, which you will know when that is given a specific error message, you should then request a new one.
 
-##
-
-### /api/v1/standard-products/monthly-data - __GET__
+## /api/v1/standard-products/monthly-data - __GET__
 
 Continuing from the code above, the following code block is how to retrieve the bearer token, setup following requests & ping the <span class='highlighted-text'>__/monthly-data__</span> endpoint:
 
@@ -151,9 +147,7 @@ In the example above, the user is requesting the TTO, TU & IU monthly data. If t
 
 The process above is the same for the <span style="color: #e30b5d;">__/annual-data__</span> and the <span style="color: #e30b5d;">__/quarterly-data__</span> endpoints.
 
-##
-
-### /api/v1/standard-products/graphs/{dataset}/{date} - __GET__
+## /api/v1/standard-products/graphs/{dataset}/{date} - __GET__
 
 The <span style="color: #e30b5d;">__/graphs/{dataset}/{date}__</span> endpoint allows an authenticated user to download a zip file that contains two files. The files are the .pptx and the .pdf versions of the monthly graphs for each respective dataset. The endpoint takes one dataset and one date at a time. 
 
