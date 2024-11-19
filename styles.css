@@ -17,6 +17,10 @@
     border-radius: 6px;        /* Rounded corners */
 }
 
-  .highlighted-text { 
-      color: #e30b5d; 
-  }
+.highlight {
+    background-color: #1e1e1e;
+}
+
+.highlighted-text { 
+    color: #e30b5d; 
+}
