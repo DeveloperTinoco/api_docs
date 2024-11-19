@@ -24,7 +24,7 @@ There are currently 7 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/tables/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 
-#
+##
 
 ### /api/v1/token - __POST__
 
@@ -78,7 +78,7 @@ Once a user is properly authenticated and they receive a JWT bearer token, they 
 
 It is best practice to store the JWT token once you request it and implement logic to re-use that JWT token. Once the token expires, which you will know when that is given a specific error message, you should then request a new one.
 
-#
+##
 
 ### /api/v1/standard-products/monthly-data - __GET__
 
@@ -151,7 +151,7 @@ In the example above, the user is requesting the TTO, TU & IU monthly data. If t
 
 The process above is the same for the <span style="color: #e30b5d;">__/annual-data__</span> and the <span style="color: #e30b5d;">__/quarterly-data__</span> endpoints.
 
-#
+##
 
 ### /api/v1/standard-products/graphs/{dataset}/{date} - __GET__
 
