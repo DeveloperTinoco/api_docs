@@ -16,9 +16,9 @@ There are currently 7 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/monthly-data
 * __GET__ - /api/v1/standard-products/quarterly-data
 * __GET__ - /api/v1/standard-products/annual-data
-* __GET__ - /api/v1/standard-products/graphs/<span style="color:#e30b5d;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
-* __GET__ - /api/v1/standard-products/tables/<span style="color:#e30b5d;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
-* __GET__ - /api/v1/standard-products/database/<span style="color:#e30b5d;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
+* __GET__ - /api/v1/standard-products/graphs/<span style="color:red;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
+* __GET__ - /api/v1/standard-products/tables/<span style="color:red;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
+* __GET__ - /api/v1/standard-products/database/<span style="color:red;">{dataset}</span>/<span style="color:#e30b5d;">{date}</span>
 
 #
 
