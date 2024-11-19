@@ -9,8 +9,10 @@
     }
 
     code, pre {
-        background-color: #141b23; /* Dark background for code blocks */
-        color: #d4d4d4;            /* Light text for code */
+        background-color: #1e1e1e; /* Dark background for preformatted text */
+        color: #d4d4d4;            /* Light text color */
+        padding: 10px;             /* Padding around the text */
+        border-radius: 6px;        /* Rounded corners */           /* Light text for code */
     }
 
 
