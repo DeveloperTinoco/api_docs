@@ -2,11 +2,11 @@
 
 ## Available Datasets
 
-* IU
-* RU
-* SU
-* TU
-* TTO
+* IU - Intermodal Update
+* RU - Rail Update
+* SU - Shippers Update
+* TU - Trucking Update
+* TTO - Truck & Trailer Outlook
 
 ## Endpoints
 
