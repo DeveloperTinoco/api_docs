@@ -8,7 +8,7 @@
         color: #bb86fc;          /* Accent color for links */
     }
 
-    .language-python highlighter-rouge .highlight code, .language-python highlighter-rouge .highlight pre {
+    .language-python.highlighter-rouge .highlight code, .language-python.highlighter-rouge .highlight pre {
         background-color: #1e1e1e; /* Dark background for preformatted text */
         color: #d4d4d4;            /* Light text color */
         padding: 10px;             /* Padding around the text */
