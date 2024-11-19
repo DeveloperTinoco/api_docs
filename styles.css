@@ -5,15 +5,12 @@
     }
 }
 
-.language-python.highlighter-rouge {
-    background-color: #1e1e1e; /* Dark background for preformatted text */
-    color: #d4d4d4;            /* Light text color */
-    padding: 10px;             /* Padding around the text */
-    border-radius: 6px;        /* Rounded corners */
-}
-
-.highlight {
-    background-color: #1e1e1e;
+.highlight pre {
+    background-color: #2b2b2b; /* Monokai dark background */
+    color: #f8f8f2;           /* Monokai text color */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 10px;
+    overflow: auto;
 }
 
 .highlighted-text { 
