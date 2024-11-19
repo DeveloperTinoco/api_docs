@@ -13,10 +13,10 @@
         color: #d4d4d4;            /* Light text color */
         padding: 10px;             /* Padding around the text */
         border-radius: 6px;        /* Rounded corners */
+    }
 
+}
 
   .highlighted-text { 
       color: #e30b5d; 
   }
-
-}
