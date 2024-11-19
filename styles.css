@@ -3,11 +3,6 @@
         background-color: #121212; /* Dark background */
         color: #ffffff;          /* Light text color */
     }
-
-    a {
-        color: #bb86fc;          /* Accent color for links */
-    }
-
 }
 
 .language-python.highlighter-rouge {
