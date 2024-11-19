@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; /* Dark background */
+        color: #ffffff;          /* Light text color */
+    }
+
+    a {
+        color: #bb86fc;          /* Accent color for links */
+    }
+
+    code, pre {
+        background-color: #1e1e1e; /* Dark background for code blocks */
+        color: #d4d4d4;            /* Light text for code */
+    }
+}
