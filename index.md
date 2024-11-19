@@ -1,6 +1,4 @@
-<style>
-  .highlighted-text { color: #e30b5d; }
-</style>
+<link rel="stylesheet" href="styles.css">
 
 ## Current available datasets
 
