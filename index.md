@@ -122,6 +122,7 @@ The following JSON output is an example of what the raw data will look like when
         ...
     ]
     ...
+}
 ```
 
 The image below is what the original file looks like and where the raw data is coming from.
