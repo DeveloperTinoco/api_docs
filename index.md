@@ -132,8 +132,8 @@ The image below is what the original file looks like and where the raw data is c
 ![Static Badge](https://img.shields.io/badge/date-969696)
 ![Static Badge](https://img.shields.io/badge/data__series-ff2e31)
 ![Static Badge](https://img.shields.io/badge/data__label-4dff4b)
-![Static Badge](https://img.shields.io/badge/history__forecast__status-feff14)
 ![Static Badge](https://img.shields.io/badge/source-2d2cfc)
+![Static Badge](https://img.shields.io/badge/history__forecast__status-feff14)
 ![Static Badge](https://img.shields.io/badge/value-fe14ff)
 
 The color coded break down above reflects what each item in our raw response represents and how our raw data is structured.
