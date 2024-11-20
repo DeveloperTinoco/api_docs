@@ -171,9 +171,15 @@ else:
     print(response_two.json())
 ```
 
-A successful ping to that endpoint used in the code block above will download the zip file as "This will be your zip filename.zip" in the same directory that the script is being executed from. The same authentication logic applies here. If the user does not have access to the TTO dataset, they can still ping the endpoint however their request will fail.
+A successful ping to that endpoint used in the code block above will download the zip file as "This will be your zip filename.zip" in the same directory that the script is being executed from. Please note that the date in the endpoint in the code block above uses a <span style="color: #e30b5d;">__YYYY-MM__</span> format. Ensure you are using this format when pinging these endpoints to successfully interact with our API.
 
-Please note that the date in the endpoint in the code block above uses a <span style="color: #e30b5d;">__YYYY-MM__</span> format. Ensure you are using this format when pinging these endpoints to successfully interact with our API.
+Our authentication process here is a bit different from our raw data endpoints. In this scenario, if the user is not subscribed to a product/service that offers the TTO dataset the request will fail and the user will receive the following error message:
+
+```python
+{
+    "detail": "your_username does not have access to the TTO dataset."
+}
+```
 
 The <span style="color: #e30b5d;">__/database__</span> and the <span style="color: #e30b5d;">__/tables__</span> endpoints work exactly the same as the <span style="color: #e30b5d;">__/graphs__</span> endpoint, the only change you will need to make is to your filename structure when downloading the file to ensure the file is downloaded appropriately. Both the <span style="color: #e30b5d;">__/database__</span> and the <span style="color: #e30b5d;">__/tables__</span> endpoints return Excel files so your file will need to be saved with the <span style="color: #e30b5d;">__.xlsx__</span> file extension as shown below.
 
