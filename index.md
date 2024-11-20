@@ -22,7 +22,7 @@ There are currently 7 different endpoints for testing in our v1 API.
 
 ## /api/v1/token - __POST__
 
-This <span class='highlighted-text'>__/token__</span> endpoint returns a JWT bearer token to the user that needs to be used in every request moving forward so that the user can remain authenticated for the given timeframe that we allocate to each token. After the given timeframe runs out (1 hour), the token expires and a new token has to be requested.
+This <span class='highlighted-text'>__/token__</span> endpoint returns a JWT token that must be included in every subsequent request to maintain user authentication. Each token is valid for a specified timeframe (1 hour).
 
 The following __Python__ code block will provide an example of how to ping the endpoint to retrieve a JWT bearer token for authorization.
 
@@ -68,9 +68,9 @@ An <span class='highlighted-text'>__unsuccessful__</span> attempt would return t
 }
 ```
 
-Once a user is properly authenticated and they receive a JWT bearer token, they must use that token in ongoing requests until that token expires.
+Once a user is properly authenticated and they receive a JWT token, they must use that token in ongoing requests until that token expires.
 
-It is best practice to store the JWT token once you request it and implement logic to re-use that JWT token. Once the token expires, which you will know when that is given a specific error message, you should then request a new one.
+It is best practice to store the JWT token once you request it and implement logic to re-use that JWT token. Once the token expires, which you will know given a specific error message, you should then request a new one.
 
 ## /api/v1/standard-products/monthly-data - __GET__
 
@@ -151,7 +151,7 @@ The process above is the same for the <span style="color: #e30b5d;">__/annual-da
 
 ## /api/v1/standard-products/graphs/{dataset}/{date} - __GET__
 
-The <span style="color: #e30b5d;">__/graphs/{dataset}/{date}__</span> endpoint allows an authenticated user to download a zip file that contains two files. The files are the .pptx and the .pdf versions of the monthly graphs for each respective dataset. The endpoint takes one dataset and one date at a time. 
+The <span style="color: #e30b5d;">__/graphs/{dataset}/{date}__</span> endpoint allows an authenticated user to download a zip file that contains two files. The files are the PowerPoint and PDF versions of the monthly graphs for each respective dataset. The endpoint takes one dataset and one date at a time. 
 
 The following code block is continued from the code block above for the <span style="color: #e30b5d;">__/token__</span> endpoint and provides an example of how to ping this endpoint to download the zip file. 
 
