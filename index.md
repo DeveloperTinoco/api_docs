@@ -88,7 +88,7 @@ updated_headers = {
 }
 
 # Querystring that holds the list of datasets we want data for
-# Note that the 'datasets' parameter accepts a Python list of strings
+# Note that the 'datasets' parameter accepts a list of strings
 querystring = {'datasets': ['tto', 'tu', 'iu']}
 
 # Send a GET request to the monthly-data endpoint with the headers and querystring
