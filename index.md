@@ -87,7 +87,7 @@ updated_headers = {
     "Accept-Encoding": "gzip"
 }
 
-# Query the datasets we want to pull the data for
+# Querystring that holds the list of datasets we want data for
 # Note that the 'datasets' parameter accepts a Python list of strings
 querystring = {'datasets': ['tto', 'tu', 'iu']}
 
