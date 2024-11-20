@@ -99,7 +99,7 @@ if response_two.status_code = 200:
     monthly_data_json = json.loads(response_two.content.decode('utf-8'))
     # Continue logic here to handle data as needed
 else:
-    print(resposne_two.json())
+    print(response_two.json())
 ```
 
 With an active JWT token, the user above is pinging the <span class='highlighted-text'>__/monthly-data__</span> endpoint for the specific datasets that are listed in the <span class='highlighted-text'>__querystring__</span> variable.
