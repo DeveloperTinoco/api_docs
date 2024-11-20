@@ -120,8 +120,13 @@ The following JSON output is an example of what the raw data will look like when
             "value": 1570.0
         },
         ...
-    ]
-    ...
+    ],
+    "tu": [
+        ...
+    ],
+    "iu": [
+        ...
+    ],
 }
 ```
 
