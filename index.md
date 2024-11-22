@@ -95,7 +95,7 @@ querystring = {'datasets': ['tto', 'tu', 'iu']}
 response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/standard-products/monthly-data", headers=updated_headers, params=querystring)
 
 # If the response is successful, decode/load the JSON data otherwise check the error
-if response_two.status_code = 200:
+if response_two.status_code == 200:
     monthly_data_json = json.loads(response_two.content.decode('utf-8'))
     # Continue logic here to handle data as needed
 else:
