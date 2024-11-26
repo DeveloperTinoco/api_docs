@@ -166,7 +166,7 @@ updated_headers = {
 }
 
 # Send a GET request to the /graphs endpoint using the dataset and date you want the zip file for
-response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/graphs/tto/2024-09", headers=updated_headers)
+response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/graphs/tto/2024-11", headers=updated_headers)
 
 # If the response is successful download the file, otherwise check the error
 if response_two.status_code == 200:
@@ -199,7 +199,7 @@ updated_headers = {
 }
 
 # Send a GET request to the /tables or /database endpoint using the dataset and date you want the file for
-response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/tables/tto/2024-09", headers=updated_headers)
+response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/tables/tto/2024-11", headers=updated_headers)
 
 # If the response is successful, download the file otherwise check the error
 if response_two.status_code == 200:
