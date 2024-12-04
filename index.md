@@ -1,13 +1,5 @@
 <link rel="stylesheet" href="styles.css">
 
-## Available Datasets
-
-* IU - Intermodal Update
-* RU - Rail Update
-* SU - Shippers Update
-* TU - Trucking Update
-* TTO - Truck & Trailer Outlook
-
 ## Data Release Schedule
 
 | Dataset | Description | Publication Timeframe |
