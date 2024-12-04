@@ -13,8 +13,8 @@
 | Dataset | Release Schedule |
 |---------|------------------|
 | IU | 2nd business day of each month |
-| SU | 5th business day of each month |
 | RU | 5th business day of each month |
+| SU | 5th business day of each month |
 | TU | Last business day of each month |
 | TTO | Last business day of each month |
 
