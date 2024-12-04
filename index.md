@@ -10,7 +10,7 @@
 
 ## Data Release Schedule
 
-| Dataset | Release Schedule |
+| Dataset | Publication |
 |---------|------------------|
 | IU | 2nd business day of each month |
 | RU | 5th business day of each month |
