@@ -10,13 +10,13 @@
 
 ## Data Release Schedule
 
-| Dataset | Publication |
-|---------|------------------|
-| IU | 2nd business day of each month |
-| RU | 5th business day of each month |
-| SU | 5th business day of each month |
-| TU | Last business day of each month |
-| TTO | Last business day of each month |
+| Dataset | Description | Publication Timeframe |
+|---------|-------------|-----------------------| 
+| IU | Intermodal Update | 2nd business day of each month |
+| RU | Rail Update | 5th business day of each month |
+| SU | Shippers Update | 5th business day of each month |
+| TU | Trucking Update | Last business day of each month |
+| TTO | Truck & Trailer Outlook | Last business day of each month |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
