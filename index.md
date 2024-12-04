@@ -18,6 +18,10 @@
 | TU | Last business day of each month |
 | TTO | Last business day of each month |
 
+To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
+
+This schedule applies uniformly across all months, with business days excluding weekends and federal holidays.
+
 ## Endpoints
 
 There are currently 7 different endpoints for testing in our v1 API.
