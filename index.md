@@ -8,6 +8,16 @@
 * TU - Trucking Update
 * TTO - Truck & Trailer Outlook
 
+## Data Release Schedule
+
+| Dataset | Release Schedule |
+|---------|------------------|
+| IU | 2nd business day of each month |
+| SU | 5th business day of each month |
+| RU | 5th business day of each month |
+| TU | Last business day of each month |
+| TTO | Last business day of each month |
+
 ## Endpoints
 
 There are currently 7 different endpoints for testing in our v1 API.
