@@ -149,7 +149,7 @@ The image below is what the original file looks like and where the raw data is c
 
 The color coded break down above reflects what each item in our raw response represents and how our raw data is structured.
 
-For a better understanding of the data present in this dataset, please refer to [this](https://raw.githubusercontent.com/DeveloperTinoco/api_docs/main/TU-SU-RU-ID Data List.xlsx) file.
+For a more comprehensive breakdown of the data present in this dataset, please refer to [this](https://raw.githubusercontent.com/DeveloperTinoco/api_docs/main/TU-SU-RU-ID Data List.xlsx) file or to our knowledge base located here: https://help.ftrintel.com/knowledge.
 
 Although the current user in our example above is authenticated by our system, this user may not be subscribed to a product/service that offers one of the datasets they requested.
 
