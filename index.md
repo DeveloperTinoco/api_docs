@@ -149,6 +149,15 @@ The image below is what the original file looks like and where the raw data is c
 
 The color coded break down above reflects what each item in our raw response represents and how our raw data is structured.
 
+For a better understanding of the data present in this dataset, please download & refer to the following file.
+
+<a href="https://raw.githubusercontent.com/DeveloperTinoco/api_docs/main/TU-SU-RU-ID Data List.xlsx" download>
+    <button style="padding: 10px 15px; background-color: #008CBA; color: white; border: none; cursor: pointer;">
+        Download File
+    </button>
+</a>
+
+
 Although the current user in our example above is authenticated by our system, this user may not be subscribed to a product/service that offers one of the datasets they requested.
 
 In the example above, the user is requesting the TTO, TU & IU monthly data. If the user is not subscribed to a product/service that provides the TTO dataset, they will only receive the TU and IU monthly data.
