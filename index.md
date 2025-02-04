@@ -149,14 +149,7 @@ The image below is what the original file looks like and where the raw data is c
 
 The color coded break down above reflects what each item in our raw response represents and how our raw data is structured.
 
-For a better understanding of the data present in this dataset, please download & refer to the following file.
-
-<a href="https://raw.githubusercontent.com/DeveloperTinoco/api_docs/main/TU-SU-RU-ID Data List.xlsx" download>
-    <button style="padding: 10px 15px; background-color: #008CBA; color: white; border: none; cursor: pointer;">
-        Download File
-    </button>
-</a>
-
+For a better understanding of the data present in this dataset, please refer to [this](https://raw.githubusercontent.com/DeveloperTinoco/api_docs/main/TU-SU-RU-ID Data List.xlsx) file.
 
 Although the current user in our example above is authenticated by our system, this user may not be subscribed to a product/service that offers one of the datasets they requested.
 
