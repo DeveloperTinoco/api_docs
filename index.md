@@ -123,7 +123,7 @@ The following JSON output is an example of what the raw data will look like when
             "data_label": "Total U.S. Tonnage (SA)",
             "source": "FTR",
             "history_forecast_status": "History",
-            "value": 1570.0
+            "value": "1570.0"
         },
         ...
     ],
