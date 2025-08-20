@@ -9,6 +9,7 @@
 | SU | Shippers Update | 5th business day of each month |
 | TU | Trucking Update | Last business day of each month |
 | TTO | Truck & Trailer Outlook | Last business day of each month |
+| REO | Rail Equipment Outlook | Quarterly |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
