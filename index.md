@@ -10,6 +10,7 @@
 | TU | Trucking Update | Last business day of each month |
 | TTO | Truck & Trailer Outlook | Last business day of each month |
 | REO | Rail Equipment Outlook | Quarterly |
+| REM | Rail Equipment Monthly | Monthly |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
@@ -26,6 +27,7 @@ There are currently 7 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/graphs/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/tables/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
+* __GET__ - /api/v1/rem
 
 ## /api/v1/token - __POST__
 
@@ -217,3 +219,33 @@ if response_two.status_code == 200:
 else:
     print(response_two.json())
 ```
+
+## /api/v1/rem - __GET__
+
+The <span style="color: #e30b5d;">__/rem__</span> endpoint is very similar to the other endpoints, however there are a few changes that need to be made in the code to pull the dataset.
+
+Once again, continuing from retrieving the bearer token, this is an example of how to ping the REM dataset as an authenticated user.
+
+```python
+# Pull the JWT bearer authentication token from the response
+bearer_token = response.json()["access_token"]
+
+# New headers that contains our authorization token & encoding setting
+updated_headers = {
+    "accept": "application/json",
+    "Authorization": f"Bearer {bearer_token}",
+    "Accept-Encoding": "gzip"
+}
+
+# Send a GET request to the rem endpoint with the headers
+response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/rem", headers=updated_headers)
+
+# If the response is successful, decode/load the JSON data otherwise check the error
+if response_two.status_code == 200:
+    rem_data_json = json.loads(response_two.content.decode('utf-8'))
+    # Continue logic here to handle data as needed
+else:
+    print(response_two.json())
+```
+
+The JSON response above for the REM dataset will include the Equipment Group Glossary and the Table Name Glossary so that you are able to identify all of the components within the response.
