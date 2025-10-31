@@ -248,4 +248,4 @@ else:
     print(response_two.json())
 ```
 
-The JSON response above for the REM dataset will include the Equipment Group Glossary and the Table Name Glossary so that you are able to identify all of the components within the response.
+The JSON response above for the REM dataset will include a __rem_quip_group_glossary__ dataset and a __rem_table_name_glossary__ dataset so that you are able to identify all of the components within the response.
