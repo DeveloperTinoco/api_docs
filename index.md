@@ -2,15 +2,15 @@
 
 ## Data Release Schedule
 
-| Dataset | Description | Publication Timeframe |
-|---------|-------------|-----------------------| 
-| IU | Intermodal Update | 2nd business day of each month |
-| RU | Rail Update | 5th business day of each month |
-| SU | Shippers Update | 5th business day of each month |
-| TU | Trucking Update | Last business day of each month |
-| TTO | Truck & Trailer Outlook | Last business day of each month |
-| REO | Rail Equipment Outlook | Quarterly |
-| REM | Rail Equipment Monthly | Monthly |
+| Dataset | Description | Publication Timeframe | Endpoint Availability |
+|---------|-------------|-----------------------|-----------------------|
+| IU | Intermodal Update | 2nd business day of each month | M, Q, A, graphs, tables, database |
+| RU | Rail Update | 5th business day of each month | M, Q, A, graphs, tables, database |
+| SU | Shippers Update | 5th business day of each month | M, Q, A, graphs, tables, database |
+| TU | Trucking Update | Last business day of each month | M, Q, A, graphs, tables, database |
+| TTO | Truck & Trailer Outlook | Last business day of each month | M, Q, A, graphs, tables, database |
+| REO | Rail Equipment Outlook | Quarterly | M, Q, A|
+| REM | Rail Equipment Monthly | Monthly | rem |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
