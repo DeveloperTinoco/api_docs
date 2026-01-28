@@ -11,7 +11,6 @@
 | TTO | Truck & Trailer Outlook | Last business day of each month | M, Q, A, graphs, tables, database |
 | REO | Rail Equipment Outlook | Quarterly | M, Q, A |
 | REM | Rail Equipment Monthly | Monthly | rem |
-| Trailers | Indicators | Monthly | indicators-trailers |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
@@ -19,7 +18,7 @@ This schedule applies uniformly across all months, with business days excluding 
 
 ## Endpoints
 
-There are currently 9 different endpoints for testing in our v1 API.
+There are currently 8 different endpoints for testing in our v1 API.
 
 * __POST__ - /api/v1/token
 * __GET__ - /api/v1/standard-products/monthly-data
@@ -29,7 +28,6 @@ There are currently 9 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/tables/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/rem
-* __GET__ - /api/v1/indicators-trailers
 
 ## /api/v1/token - __POST__
 
