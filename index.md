@@ -250,7 +250,7 @@ else:
     print(response_two.json())
 ```
 
-The JSON response above for the REM dataset will include a __rem_quip_group_glossary__ dataset and a __rem_table_name_glossary__ dataset so that you are able to identify all of the components within the response.
+The JSON response above for the REM dataset will include a <span style="color: #e30b5d;">__rem_quip_group_glossary__</span> dataset and a <span style="color: #e30b5d;">__rem_table_name_glossary__</span> dataset so that you are able to identify all of the components within the response.
 
 ## /api/v1/indicators-trailers - __GET__
 
