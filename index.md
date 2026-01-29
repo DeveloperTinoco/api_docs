@@ -283,4 +283,4 @@ else:
     print(response_two.json())
 ```
 
-The main difference for this endpoint is that the endpoint accepts a __'date'__ parameter. If given, the date will be used to return the data from that date and onward. If you want to retrieve all of the historical data then remove the __params=querystring__ parameter in the GET request in the code above. It is important that if you are passing a date, you pass the date in the YYYY-MM format otherwise you will receive an error.
+The main difference for this endpoint is that the endpoint accepts a <span style="color: #e30b5d;">__'date'__</span> parameter. If given, the date will be used to return the data from that date and onward. If you want to retrieve all of the historical data then remove the <span style="color: #e30b5d;">__params=querystring__</span> parameter in the GET request in the code above. It is important that if you are passing a date, you pass the date in the <span style="color: #e30b5d;">__YYYY-MM__</span> format otherwise you will receive an error.
