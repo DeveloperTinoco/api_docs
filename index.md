@@ -11,6 +11,7 @@
 | TTO | Truck & Trailer Outlook | Last business day of each month | M, Q, A, graphs, tables, database |
 | REO | Rail Equipment Outlook | Quarterly | M, Q, A |
 | REM | Rail Equipment Monthly | Monthly | rem |
+| Trailers Indicators | Various Indicators for Trailers | Monthly | indicators-trailers |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
@@ -18,7 +19,7 @@ This schedule applies uniformly across all months, with business days excluding 
 
 ## Endpoints
 
-There are currently 8 different endpoints for testing in our v1 API.
+There are currently 9 different endpoints for testing in our v1 API.
 
 * __POST__ - /api/v1/token
 * __GET__ - /api/v1/standard-products/monthly-data
@@ -28,6 +29,7 @@ There are currently 8 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/tables/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/rem
+* __GET__ - /api/v1/indicators-trailers
 
 ## /api/v1/token - __POST__
 
@@ -249,3 +251,36 @@ else:
 ```
 
 The JSON response above for the REM dataset will include a __rem_quip_group_glossary__ dataset and a __rem_table_name_glossary__ dataset so that you are able to identify all of the components within the response.
+
+## /api/v1/indicators-trailers - __GET__
+
+The <span style="color: #e30b5d;">__/indicators-trailers__</span> endpoint is very similar to the other endpoints, however there are a few changes that need to be made in the code to pull the dataset.
+
+Once again, continuing from retrieving the bearer token, this is an example of how to ping the Trailers Indicators dataset as an authenticated user.
+
+```python
+# Pull the JWT bearer authentication token from the response
+bearer_token = response.json()["access_token"]
+
+# New headers that contains our authorization token & encoding setting
+updated_headers = {
+    "accept": "application/json",
+    "Authorization": f"Bearer {bearer_token}",
+    "Accept-Encoding": "gzip"
+}
+
+# Create the querystring to pull the data from a certain date and onward
+querystring = {'date': '2024-10'}
+
+# Send a GET request to the indicators-trailers endpoint with the headers
+response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/indicators-trailers", headers=updated_headers, params=querystring)
+
+# If the response is successful, decode/load the JSON data otherwise check the error
+if response_two.status_code == 200:
+    indicators_trailers_data_json = json.loads(response_two.content.decode('utf-8'))
+    # Continue logic here to handle data as needed
+else:
+    print(response_two.json())
+```
+
+The main difference for this endpoint is that the endpoint accepts a __'date'__ parameter. If given, the date will be used to return the data from that date and onward. If you want to retrieve all of the historical data then remove the __params=querystring__ parameter in the GET request in the code above. It is important that if you are passing a date, you pass the date in the YYYY-MM format otherwise you will receive an error.
