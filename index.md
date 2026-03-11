@@ -20,7 +20,7 @@ This schedule applies uniformly across all months, with business days excluding 
 
 ## Endpoints
 
-There are currently 9 different endpoints for testing in our v1 API.
+There are currently 10 different endpoints in our v1 API.
 
 * __POST__ - /api/v1/token
 * __GET__ - /api/v1/standard-products/monthly-data
