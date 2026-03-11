@@ -12,6 +12,7 @@
 | REO | Rail Equipment Outlook | Quarterly | M, Q, A |
 | REM | Rail Equipment Monthly | Monthly | rem |
 | Trailers Indicators | Various Indicators for Trailers | Monthly | indicators-trailers |
+| Bloomberg Rail | Custom Database for Bloomberg | Monthly | custom-datasets/bloomberg-rail |
 
 To ensure data availability, the earliest time you can reliably pull data for each release is __6 PM EST__ on the respective publication day.
 
@@ -30,6 +31,7 @@ There are currently 9 different endpoints for testing in our v1 API.
 * __GET__ - /api/v1/standard-products/database/<span class='highlighted-text'>{dataset}</span>/<span class='highlighted-text'>{date}</span>
 * __GET__ - /api/v1/rem
 * __GET__ - /api/v1/indicators-trailers
+* __GET__ - /api/v1/custom-datasets/bloomberg-rail
 
 ## /api/v1/token - __POST__
 
@@ -284,3 +286,33 @@ else:
 ```
 
 The main difference for this endpoint is that the endpoint accepts a <span style="color: #e30b5d;">__'date'__</span> parameter. If given, the date will be used to return the data from that date and onward. If you want to retrieve all of the historical data then remove the <span style="color: #e30b5d;">__params=querystring__</span> parameter in the GET request in the code above. It is important that if you are passing a date, you pass the date in the <span style="color: #e30b5d;">__YYYY-MM__</span> format otherwise you will receive an error.
+
+## /api/v1/custom-datasets/bloomberg-rail - __GET__
+
+The <span style="color: #e30b5d;">__/custom-datasets/bloomberg-rail__</span> endpoint is very similar to the other endpoints.
+
+Once again, continuing from retrieving the bearer token, this is an example of how to ping the custom Bloomberg Rail dataset as an authenticated user.
+
+```python
+# Pull the JWT bearer authentication token from the response
+bearer_token = response.json()["access_token"]
+
+# New headers that contains our authorization token & encoding setting
+updated_headers = {
+    "accept": "application/json",
+    "Authorization": f"Bearer {bearer_token}",
+    "Accept-Encoding": "gzip"
+}
+
+# Send a GET request to the bloomberg rail endpoint with the headers
+response_two = session.get(url="https://h1wh682ob0.execute-api.us-east-1.amazonaws.com/api/v1/custom-datasets/bloomberg-rail", headers=updated_headers)
+
+# If the response is successful, decode/load the JSON data otherwise check the error
+if response_two.status_code == 200:
+    bloomberg_data_json = json.loads(response_two.content.decode('utf-8'))
+    # Continue logic here to handle data as needed
+else:
+    print(response_two.json())
+```
+
+For this endpoint, the JSON response will return all of the monthly, quarterly and annual data associated with this custom database.
